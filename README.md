@@ -26,14 +26,6 @@ The `Vault` contract allows users to deposit and withdraw both ETH and ERC20 tok
    - Users can wrap their deposited ETH into WETH without withdrawing.
    - Users can unwrap their WETH back into ETH within the vault.
 
-### Deployment and Verification Scripts
-
-```
-- Deployment script is added to easily deploy the contract to the desired Network(currently using Arbitrum sepolia).
-- Verification script is also added for auto verification of the source code on the deployed network.
-- Requires to pass  Arbitrum sepolia alchemy API and private key for deployment while Blockchain explorer API for verification to be placed in .env file, see .env.example for reference.
-```
-
 ## Compiling and Running Tests
 
 ### Prerequisites
@@ -67,3 +59,9 @@ npx hardhat compile
 npx hardhat test
 npx hardhat run scripts/deploy.js --network arbitrum
 ```
+
+### Deployment and Verification Scripts
+
+- Deployment script is added to easily deploy the contract to the desired Network(currently using Arbitrum sepolia).
+- Verification script is also added for auto verification of the source code on the deployed network.
+- Requires to pass Arbitrum sepolia alchemy API and private key for deployment while Blockchain explorer API for verification to be placed in .env file, see .env.example for reference.
